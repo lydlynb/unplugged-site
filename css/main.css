@@ -155,11 +155,11 @@ textarea {
    }
 
    img {
-
+     width: 100%;
    }
 
    figure {
-
+     margin: 0;
    }
 
    address {
@@ -196,10 +196,19 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .header-divider {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background: #3a3a3a;
 }
 
 header nav {
@@ -219,6 +228,10 @@ header nav ul {
   width: 100%;
 }
 
+header nav ul li {
+  font-size: 1.125em;
+}
+
 /* Footer Styels */
 
 footer {
@@ -229,6 +242,10 @@ footer {
 footer .content-wrapper{
   width: 55%;
   margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
 }
 
 footer .footer-content {
@@ -271,6 +288,11 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url('../img/girl-bridge.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -285,6 +307,10 @@ aside {
   background-color: #527158;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+
 .form-description {
 
 }
@@ -297,6 +323,9 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url('../img/feet.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .features h2 {
@@ -410,7 +439,7 @@ figure {
   margin-bottom: 50px;
 }
 
-.faq-content {
+.faq-content h4 {
   line-height: 1.333;
   font-weight: 700;
 }
@@ -555,7 +584,7 @@ h3 {
   }
 
 header figure {
-  width: 20%;
+  width: 30%;
 }
 
   header nav {
@@ -589,7 +618,7 @@ header figure {
     margin: 0;
   }
 
-  features h2 {
+.features h2 {
     margin: 0 20px 20px 0;
   }
 
@@ -614,6 +643,7 @@ header figure {
   width: 90%;
 }
 
+.reviews article figure,
 .reviews article div {
   width: 49%x;
 }
@@ -706,6 +736,7 @@ footer .copyright {
 
   h2 {
     font-size: 2.25em;
+    width: 90%;
   }
 
   h3,
@@ -719,7 +750,7 @@ footer .copyright {
   }
 
   .hero-area h1 {
-    width: 45%;
+    width: 60%;
     font-size: 3.75em;
   }
 
@@ -754,9 +785,17 @@ footer .copyright {
   /****** About Page *****/
 
   .mission h2,
-  contact-section .content-wrapper h2 {
+  .contact-section .content-wrapper h2 {
     width: 100%;
     font-size: 3em;
+  }
+
+  .contact-section .content-wrapper h2 {
+    margin-bottom: 40px;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
   }
 
   .mission {
